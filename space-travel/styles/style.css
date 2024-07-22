@@ -312,3 +312,9 @@ select {
 .dot-indicators > [aria-selected='true'] {
   background-color: hsl(var(--clr-white) / 1);
 }
+
+.logo {
+  width: 60px;
+  background-color: hsl(var(--clr-white));
+  border-radius: 50%;
+}
