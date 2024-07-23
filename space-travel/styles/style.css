@@ -10,11 +10,11 @@
 
   /* font-sizes */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
-  --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
   --fs-500: 1rem;
-  --fs-400: 0.9375rem;
+  --fs-400: 1.125rem;
   --fs-300: 1rem;
   --fs-200: 0.875rem;
 
@@ -70,7 +70,6 @@ figure,
 picture {
   margin: 0;
 }
-
 h1,
 h2,
 h3,
@@ -92,13 +91,11 @@ body {
 
   display: grid;
   grid-template-rows: min-content 1fr;
-
   overflow-x: hidden;
 }
 
 /* make images easier to work with */
-img,
-picutre {
+img {
   max-width: 100%;
   display: block;
 }
@@ -148,7 +145,7 @@ select {
 }
 
 .flow--space-small {
-  --flow-space: 0.75rem;
+  --flow-space: 0.5rem;
 }
 
 .container {
@@ -167,21 +164,6 @@ select {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap; /* added line */
   border: 0;
-}
-
-.skip-to-content {
-  position: absolute;
-  z-index: 9999;
-  background: hsl(var(--clr-white));
-  color: hsl(var(--clr-dark));
-  padding: 0.5em 1em;
-  margin-inline: auto;
-  transform: translateY(-100%);
-  transition: transform 250ms ease-in;
-}
-
-.skip-to-content:focus {
-  transform: translateY(0);
 }
 
 /* colors */
@@ -278,14 +260,14 @@ select {
 }
 
 /* ------------------- */
-/* Compontents         */
+/* Components         */
 /* ------------------- */
 
 .large-button {
   font-size: 2rem;
   position: relative;
-  z-index: 1;
   display: inline-grid;
+  z-index: 1;
   place-items: center;
   padding: 0 2em;
   border-radius: 50%;
@@ -299,7 +281,7 @@ select {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: hsl(var(--clr-white) / 0.1);
+  background: hsl(var(--clr-white) / 0.15);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 500ms linear, transform 750ms ease-in-out;
@@ -332,7 +314,7 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: hsl(var(--clr-white) / 0.05);
+  background: hsl(var(--clr-white) / 0.1);
   backdrop-filter: blur(1.5rem);
 }
 
@@ -378,7 +360,7 @@ select {
     right: 1rem;
     top: 2rem;
     background: transparent;
-    background-image: url(./assets/shared/icon-hamburger.svg);
+    background-image: url(../assets/icons/icon-burger.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 1.5rem;
@@ -387,7 +369,7 @@ select {
   }
 
   .mobile-nav-toggle[aria-expanded='true'] {
-    background-image: url(./assets/shared/icon-close.svg);
+    background-image: url(../assets/icons/icon-close.svg);
   }
 
   .mobile-nav-toggle:focus-visible {
@@ -399,6 +381,12 @@ select {
 @media (min-width: 35em) {
   .primary-navigation {
     padding-inline: clamp(3rem, 7vw, 7rem);
+  }
+}
+
+@media (min-width: 35em) and (max-width: 45em) {
+  .primary-navigation a > span {
+    display: none;
   }
 }
 
@@ -476,57 +464,22 @@ body {
   background-size: cover;
   background-position: bottom center;
 }
+
 /* home */
 .home {
-  background-image: url(./assets/home/background-home-mobile.jpg);
+  background-image: url(../assets/img/home/home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
   .home {
     background-position: center center;
-    background-image: url(./assets/home/background-home-tablet.jpg);
+    background-image: url(../assets/img/home/home-tablet.jpg);
   }
 }
 
 @media (min-width: 45rem) {
   .home {
-    background-image: url(./assets/home/background-home-desktop.jpg);
-  }
-}
-
-/* destination */
-.destination {
-  background-image: url(./assets/destination/background-destination-mobile.jpg);
-}
-
-@media (min-width: 35rem) {
-  .destination {
-    background-position: center center;
-    background-image: url(./assets/destination/background-destination-tablet.jpg);
-  }
-}
-
-@media (min-width: 45rem) {
-  .destination {
-    background-image: url(./assets/destination/background-destination-desktop.jpg);
-  }
-}
-
-/* crew */
-.crew {
-  background-image: url(./assets/home/background-crew-mobile.jpg);
-}
-
-@media (min-width: 35rem) {
-  .crew {
-    background-position: center center;
-    background-image: url(./assets/crew/background-crew-tablet.jpg);
-  }
-}
-
-@media (min-width: 45rem) {
-  .crew {
-    background-image: url(./assets/crew/background-crew-desktop.jpg);
+    background-image: url(../assets/img/home/home-desktop.jpg);
   }
 }
 
@@ -611,7 +564,7 @@ body {
 }
 
 .crew-details h2 {
-  color: hsl(var(--clr-white) / 0.5);
+  opacity: 0.5;
 }
 
 @media (min-width: 35em) {
@@ -684,11 +637,7 @@ body {
       '. tabs image .';
   }
 
-  .grid-container--crew > .dot-indicators {
-    justify-self: start;
-  }
-
   /* .grid-container--crew > picture {
-        align-self: end;
-    } */
+    align-self: end;
+  } */
 }
