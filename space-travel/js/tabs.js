@@ -1,19 +1,3 @@
-// Burger navigation
-
-const nav = document.querySelector('.primary-navigation')
-const navToggle = document.querySelector('.mobile-nav-toggle')
-
-navToggle.addEventListener('click', () => {
-  const visibility = nav.getAttribute('data-visible')
-  if (visibility === 'false') {
-    nav.setAttribute('data-visible', true)
-    navToggle.setAttribute('aria-expanded', true)
-  } else {
-    nav.setAttribute('data-visible', false)
-    navToggle.setAttribute('aria-expanded', false)
-  }
-})
-
 // Tabs
 
 const tabList = document.querySelector('[role="tablist"]')
@@ -81,3 +65,27 @@ function changeTabPanel(e) {
 
   mainContainer.querySelector([`#${targetImage}`]).removeAttribute('hidden')
 }
+// Strings 62 - 82 can be as here!!!
+
+// tabContainer
+//         .querySelector('[aria-selected="true"]')
+//         .setAttribute("aria-selected", false);
+
+//     targetTab.setAttribute("aria-selected", true);
+
+//     hideContent(mainContainer, '[role="tabpanel"]');
+//     showContent(mainContainer, [`#${targetPanel}`]);
+
+//     hideContent(mainContainer, 'picture');
+//     showContent(mainContainer, [`#${targetImage}`]);
+// }
+
+// function hideContent(parent, content) {
+//     parent
+//         .querySelectorAll(content)
+//         .forEach((item) => item.setAttribute("hidden", true));
+// }
+
+// function showContent(parent, content) {
+//      parent.querySelector(content).removeAttribute('hidden');
+//
