@@ -145,6 +145,10 @@ select {
   margin-top: var(--flow-space, 1rem);
 }
 
+.flow--space-small {
+  --flow-space: 0.5rem;
+}
+
 .container {
   padding-inline: 2em;
   margin-inline: auto;
@@ -416,9 +420,10 @@ select {
 
 .underline-indicators > * {
   cursor: pointer;
-  padding: var(--underline-gap, 1rem) 0;
+  padding: var(--underline-gap, 0.5rem) 0;
   border: 0;
   border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
+  background-color: transparent;
 }
 
 .underline-indicators > *:hover,
@@ -461,9 +466,6 @@ body {
   background-position: bottom center;
 }
 
-.border-img {
-  border-radius: 50%;
-}
 /* home */
 .home {
   background-image: url(../assets/img/home/home-mobile.jpg);
@@ -560,6 +562,10 @@ body {
 
 .grid-container--crew > .crew-details {
   grid-area: content;
+}
+
+.crew-details h2 {
+  opacity: 0.5;
 }
 
 @media (min-width: 35em) {
