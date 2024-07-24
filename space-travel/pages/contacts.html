@@ -13,20 +13,21 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/icons/space_x_icon.svg"
+      href="../assets/icons/space_x_icon.svg"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
     <title>Space Travel</title>
-    <script src="./js/navigation.js" defer></script>
-    <script src="./js/tabs.js" defer></script>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/tabs.js" defer></script>
   </head>
-  <body class="home">
+
+  <body class="destination">
     <header class="primary-header flex">
       <div class="logo-box">
-        <a href="./index.html">
+        <a href="../index.html">
           <img
             class="logo"
-            src="./assets/icons/logo.svg"
+            src="../assets/icons/logo.svg"
             alt="space tourism logo"
           />
         </a>
@@ -40,31 +41,31 @@
           data-visible="false"
           class="primary-navigation underline-indicators flex"
         >
-          <li class="active">
+          <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="index.html"
+              href="../index.html"
               ><span aria-hidden="true">00</span>Home</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="./pages/destination.html"
+              href="./destination.html"
               ><span aria-hidden="true">01</span>Destination</a
             >
           </li>
           <li>
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="./pages/crew.html"
+              href="./crew.html"
               ><span aria-hidden="true">02</span>Crew</a
             >
           </li>
-          <li>
+          <li class="active">
             <a
               class="ff-sans-cond uppercase text-white letter-spacing-2"
-              href="./pages/contacts.html"
+              href="./contacts.html"
               ><span aria-hidden="true">03</span>Contacts</a
             >
           </li>
@@ -72,27 +73,30 @@
       </nav>
     </header>
 
-    <main class="grid-container grid-container--home">
-      <div>
-        <h1 class="text-accent fs-500 ff-sans-cond uppercase letter-spacing-1">
-          So, you want to travel to
-          <span class="d-block fs-900 ff-serif text-white">Space</span>
-        </h1>
+    <main id="main" class="grid-container grid-container--destination flow">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">03</span> Front-End Developer
+      </h1>
+      <picture>
+        <img src="../assets/img/contacts/man.jpg" alt="a man on the street" />
+      </picture>
 
+      <!-- The contacts -->
+      <article class="destination-info flow">
         <p>
-          Let’s face it; if you want to go to space, you might as well genuinely
-          go to outer space and not hover kind of on the edge of it. Well sit
-          back, and relax because we’ll give you a truly out of this world
-          experience!
+          Hi there, my name is Ihar Batura and I'm a Front-End Developer. I'm
+          currently learning Front-end development everyday. My English - B1
+          Intermediate, and I practice my english with native speakers every
+          week. I love to study and open new technology. If you want to work
+          with me or you want to give me some advices, I'll be happy.
         </p>
-      </div>
-      <div>
-        <a
-          href="./pages/destination.html"
-          class="large-button uppercase ff-serif text-dark bg-white"
-          >Explore</a
-        >
-      </div>
+
+        <div class="destination-meta flex">
+          <div>
+            <h3 class="text-accent fs-200 uppercase">My contacts:</h3>
+          </div>
+        </div>
+      </article>
     </main>
   </body>
 </html>
