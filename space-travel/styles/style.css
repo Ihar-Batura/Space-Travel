@@ -647,3 +647,12 @@ body {
     align-self: end;
   } */
 }
+.contact-logo {
+  max-width: 40px;
+  height: 40px;
+}
+
+.contacts {
+  margin-top: 15px;
+  justify-content: center;
+}
