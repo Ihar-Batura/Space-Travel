@@ -467,20 +467,34 @@ body {
 
 /* home */
 .home {
-  background-image: url(../assets/img/home/home-mobile.jpg);
+  background-image: url(../assets/img/home/home-small.jpg);
 }
 
 @media (min-width: 35rem) {
   .home {
     background-position: center center;
-    background-image: url(../assets/img/home/home-tablet.jpg);
+    background-image: url(../assets/img/home/home-small.jpg);
   }
 }
 
 @media (min-width: 45rem) {
   .home {
-    background-image: url(../assets/img/home/home-desktop.jpg);
+    background-image: url(../assets/img/home/home-big22.jpg);
   }
+}
+
+/* destination */
+.destination {
+  background-image: url(../assets/img/destination/stars-sky.jpg);
+}
+
+/* crew */
+.crew {
+  background-image: url(../assets/img/crew/crew-back.jpg);
+}
+/* contacts */
+.contacts {
+  background-image: url(../assets/img/contacts/contacts-bk.jpg);
 }
 
 /* ----------------------------- */
@@ -652,7 +666,11 @@ body {
   height: 40px;
 }
 
-.contacts {
+.contacts-links {
   margin-top: 15px;
   justify-content: center;
+}
+
+picture > img {
+  border-radius: 3px;
 }
