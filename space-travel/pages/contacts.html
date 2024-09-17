@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/space_x_icon.svg"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Space Travel</title>
+    <script src="../js/navigation.js" defer></script>
+    <script src="../js/tabs.js" defer></script>
+  </head>
+
+  <body class="contacts">
+    <header class="primary-header flex">
+      <div class="logo-box">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/icons/logo.svg"
+            alt="space tourism logo"
+          />
+        </a>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Menu</span>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators flex"
+        >
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="../index.html"
+              ><span aria-hidden="true">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="./destination.html"
+              ><span aria-hidden="true">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="./crew.html"
+              ><span aria-hidden="true">02</span>Crew</a
+            >
+          </li>
+          <li class="active">
+            <a
+              class="ff-sans-cond uppercase text-white letter-spacing-2"
+              href="./contacts.html"
+              ><span aria-hidden="true">03</span>Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--destination flow">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">03</span> Front-End Developer
+      </h1>
+      <picture>
+        <img src="../assets/img/contacts/man.jpg" alt="a man on the street" />
+      </picture>
+
+      <!-- The contacts -->
+      <article class="destination-info flow">
+        <p>
+          Hi there, my name is Ihar Batura and I'm a Front-End Developer. I'm
+          currently learning Front-end development everyday. My English - B1
+          Intermediate, and I practice my english with native speakers every
+          week. I love to study and open new technologies. Sports and travel
+          give me energy and I can take on new challenges. If you want to work
+          with me or you want to give me some advices, I'll be happy.
+        </p>
+
+        <div class="destination-meta flex">
+          <div>
+            <h3 class="text-accent fs-200 uppercase">My contacts:</h3>
+            <div class="flex contacts-links">
+              <a href="https://github.com/Ihar-Batura" target="_blank">
+                <img
+                  class="contact-logo"
+                  src="../assets/icons/git.svg"
+                  alt="github logo"
+                />
+              </a>
+              <a href="mailto:6983824@gmail.com">
+                <img
+                  class="contact-logo"
+                  src="../assets/icons/mail.svg"
+                  alt="email logo"
+                />
+              </a>
+              <a href="https://discordapp.com/users/925457041785512027/">
+                <img
+                  class="contact-logo"
+                  src="../assets/icons/discord.svg"
+                  alt="discord logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
